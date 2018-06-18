@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Starting hstag-->
+<style>
+#hstag {
+    
+    text-shadow: 2px 2px 4px #3fe162;
+}
+</style>
+<!--Closing hstag-->
+<!--Heading Styles Code starts here-->
+<style>
+#headline {
+   color: #000000;
+    text-shadow: 2px 2px 5px #3fe162;
+	}
+</style>
+<!--Heading Styles Code ends here-->
+
+<!--All Codec or BlkScrn starts here-->
+<!--Syling Codes for Loader-->
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid orange;
+  border-right: 16px solid while;
+  border-bottom: 16px solid green;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<!--Closing Syling for Loader-->
+
+<!-- Progress Bar Styling-->
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<!-- Closing Progress Bar Styling-->
+
+
+<!-- Styling Codes for startup Black Screen -->
+<style>
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+</style>
+<!-- closing Styling Codes for startup Black Screen -->
+
+<!-- Black screen script-->
+<script>
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+}
+function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+<!-- Closing Black screen script -->
+
+<!--Starting ProgressBar Script-->
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 70);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+	  closeSearch();
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+<!--Ending ProgressBar Script-->
+<!--All Codec for BlkScrn Ends here-->
+
+<!--Left NavBar floating codes-->
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+<!--Left NavBar floating codes ends here-->
+
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>Taltank - Meaningful Blogs & IT-KnowledgeBase</title>
+ </head>
+    
+    <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+    <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+    <!--[if IE 8 ]><body class="ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!--[if !IE]><!--><body><!--<![endif]-->
+
+ <!--All Codec for BlkScrn under body starts here-->
+  <!--tags for black screen contents-->
+<div id="myOverlay" class="overlay">
+  
+ <br><br>
+ <br><br>
+
+ <!-- Loader SCC Called here-->
+	<center>
+	<div class="loader"></div>
+	</center>
+	<br>
+
+<!-- ProgressBar SCC Called here-->
+	<div id="myProgress">
+   <div id="myBar">10%</div>
+   
+<!-- Script to autoload Progress bar and loader-->
+		<script>
+			//call after page loaded
+			window.onload=move() ; 
+		</script>
+</div>
+<center><br>
+<font face="verdana" color="white" size="5"><b>#<font color="#22b4d5">Tal</font><font color="red">tank </font> Loading....
+</b></font>
+
+</center>	
+</div>
+<!-- Closing the tags for black screen contents-->
+
+
+<script>
+window.onload = function() 
+{
+  openSearch()(param1, param2);
+};
+</script>
+ <!--All Codec for BlkScrn under body Ends here-->
+		
+        <div id="main_wrapper">                 
+            <div id="banner_image">
+                <div id="banner_description">
+                    <marquee>
+					<span style="font-family: &quot;verdana&quot; , sans-serif;"><b>
+					Certainly the most Comprehensive & Informative Blogs on what you are looking for..
+					</b>
+					</span>
+					</marquee>                  
+                </div>					
+            </div>
+		
+			<header>
+			<nav>
+                    <p id="hstag" align="left">
+                        <a href="#">Home</a> &nbsp;&nbsp;&nbsp;
+                        <a href="#">Blogs</a> &nbsp;&nbsp;&nbsp;
+                        <a href="contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
+                <!-- hitwebcounter Code START -->
+				<b> 
+				<span style= "font-family: &quot;verdana&quot; , sans-serif; font-size: x-large;">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<font color="#22b4d5">Tal</font><font color="red">tank </font>&nbsp;
+				</span>
+				</b>
+<img src="http://hitwebcounter.com/counter/counter.php?page=6958407&style=0005&nbdigits=7&type=ip&initCount=627"width="169"height="24" title="Our Site Visitors"" Alt="Taltank Users"   border="0" >
+
+					
+					</p>
+            </nav>
+			</header>
+            
+<section>
+<article>
+				    
+					<!-- Home Page Contents Starts Here-->
+					<h1><img src="images/pin.png" alt="Taltank ideology" class="cat_icon" />Not Just Another Blog</h1>
+                    
+					<p><b><span style="font-family: &quot;verdana&quot; , sans-serif;">
+					We do not claim to be the best blogging platform or No.1 for that matter. We always thrive for the passion to provide best possible information in most simple form that everyone can understand and rely upon. <br>We Strongly believe in "<font color="#22b4d5">No Trademark on Knowledge!</font>". 
+					</span></b>
+					</p>
+					
+					<p><b><span style="font-family: &quot;verdana&quot; , sans-serif;">
+					The Pen & Paper era is coming to an end. Every bit of information is available in your pocket and to be perfectly honest, nobody has time or would like to scroll down a bulky website with endless pages and limited meaning content. Therefore, we’re always <font color="#22b4d5">UP</font> and 
+					<font color="#22b4d5">READY!</font> to help you on your quest for Knowledge! 
+					</span>
+					</b></p> 
+					<!-- Home Page Contents Ends Here-->
+					
+					
+					<!--List of Blogs with Pics-->
+					
+<!--Round/Glow border styling code starts here-->
+<style>
+.rbordr {
+border-radius: 25px;
+border: 2px solid #73AD21;
+height:130px;
+width:270px;
+line-height:70px;
+text-align:center;
+border:2px solid #dd;
+border-radius: 3px;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+transition: all 200ms ease-out;
+}
+.rbordr:hover {
+box-shadow: 0 0 20px rgba(35, 173, 278, 1);
+}
+</style>
+<!--Round/Glow border styling code ends here-->
+
+					<center>
+					<br>
+					<p id="headline">
+					<b><span style="font-family: &quot;verdana&quot; , sans-serif; font-size: x-large;">
+					#List of Recent Blogs
+					</span></b>
+					</p>
+					</center>
+					
+					<br>
+					<center>
+					<b>75+ Views</b>
+					<div class="rbordr">
+					<a href="drupal.html">
+					<img src="resources/drupal.jpg"width="270px"height="130px"Alt="#CMS Platform: Drupal"> 
+					</a>
+					</div>
+					
+					<br><br>
+					<b>617+ Views</b>
+					<div class="rbordr">
+					<a href="kotlin.html">
+					<img src="resources/kotlin.jpg"width="270px"height="130px"Alt="#Android Development Language: Kotlin"> 
+					</a>
+					</div>
+					
+					<br><br>
+					<b>860+ Views</b>
+					<div class="rbordr">
+					<a href="android.html">
+					<img src="resources/alogo.jpg"width="270px"height="130px"alt="Android Mobile Operating System">
+					</a>
+					</div>
+					
+					
+					</center>
+					<br><br>
+					
+					<!-- Blog Contents Ends Here-->
+</article>
+                
+<!-- Starting imgshk-->
+<style>
+aside img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+<!--Cls imgshk-->
+						
+				<aside id="navbar" style="top: -50px; margin-top: 80px;">				
+		            <h1>About the author</h1>
+                    <img src="images/arrow.png" alt="" id="arrow" />
+                    <p id="taltanklogo_picture"><img src="images/logo.png" alt="Taltank Logo" /></p>
+                     <p>Let us introduce ourselves: We are "Taltank!". A complete open source platform & believe in "No Trademark on Knowledge"</p>
+                    <p>A bit meager, is it not? This is why We've now decided to write open Blogs & sharing our bit of knowledge to let our readers know who we really are. </p>
+					<p><font color="orange"><b>Something new is coming....</b></font></p>
+                    <!--Social ID Plugins coding-->
+					<p>
+					<a href="https://www.facebook.com/taltank.social" target="_Blank"><img src="images/facebook.png" alt="Facebook" /></a>
+					<a href="https://twitter.com/Taltank1" target="_Blank"><img src="images/twitter.png" alt="Twitter" /></a>
+					<a href="https://plus.google.com/104488208199065032958" target="_Blank"><img src="images/blogger.png" alt="Blogger" /></a>
+					<a href="https://www.linkedin.com/in/taltank-58651b165/" target="_Blank"><img src="images/linkdin.png" alt="Linkedindin" /></a>
+					</p>
+					<!--Closing Social ID Plugins coding-->
+				</aside>
+				
+				
+		</div>
+</section>
+            
+            <footer>
+			 <div id="tweet">
+                    <h1>Our last tweet</h1>
+                    <p>
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Taltank?src=hash&amp;ref_src=twsrc%5Etfw">#Taltank</a> <a href="https://twitter.com/hashtag/Blog?src=hash&amp;ref_src=twsrc%5Etfw">#Blog</a> <a href="https://twitter.com/hashtag/Drupal?src=hash&amp;ref_src=twsrc%5Etfw">#Drupal</a> <a href="https://twitter.com/hashtag/CMS?src=hash&amp;ref_src=twsrc%5Etfw">#CMS</a> <a href="https://twitter.com/hashtag/Platform?src=hash&amp;ref_src=twsrc%5Etfw">#Platform</a> <br>Another Quick and Comprehensive Blog on &quot;Drupal CMS&quot;<a href="https://t.co/V7V97pVCuz">https://t.co/V7V97pVCuz</a></p>&mdash; Taltank (@Taltank1) <a href="https://twitter.com/Taltank1/status/1008667372113154048?ref_src=twsrc%5Etfw">June 18, 2018</a></blockquote>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</p>
+			</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<div id="my_pictures">
+				<h1> Our Recent Facebook Share</h1>
+				<p>
+				<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaltank.social%2Fposts%2F1278945332208084&width=500" width="500" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</p>
+				</div>
+            </footer>
+			
+			
+        </div>
+    </body>
+</html>
